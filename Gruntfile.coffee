@@ -27,13 +27,13 @@ module.exports = (grunt) ->
 					module: true,
 					require: true
 			all:
-				src: ['*.js', 'src/*.js']
+				src: ['*.js', 'src/**/*.js']
 
 		coffeelint:
 			options:
 				no_tabs: {level: 'ignore'}
 				indentation: {level: 'ignore'}
-			dev: ['*.coffee', 'src/*.coffee']
+			dev: ['*.coffee', 'src/**/*.coffee']
 
 		simplemocha:
 			options:
