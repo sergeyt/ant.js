@@ -1,0 +1,36 @@
+{
+  "name": "ant.js",
+  "version": "0.0.0",
+  "description": ".NET build tool powered by nodejs.",
+  "license": "Apache",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:sergeyt/ant.js.git"
+  },
+  "keywords": [
+    "build"
+  ],
+  "author": "Sergey Todyshev <stodyshev@gmail.com>",
+  "contributors": [
+    "Sergey Todyshev <stodyshev@gmail.com>"
+  ],
+  "dependencies": {
+    "coffee-script": "~1.6.3"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-jshint": "~0.7.1",
+    "grunt-npm": "~0.0.2",
+    "grunt-bump": "~0.0.7",
+    "grunt-auto-release": "~0.0.2",
+    "grunt-karma": "~0.6.2",
+    "grunt-coffeelint": "0.0.7",
+    "grunt-cli": "~0.1.11",
+    "grunt-simple-mocha": "~0.4.0"
+  },
+  "scripts": {
+    "lint": "grunt lint",
+    "test": "grunt test"
+  }
+}
