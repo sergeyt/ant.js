@@ -1,7 +1,7 @@
 ﻿var fs = require('fs'),
 	path = require('path'),
 	yaml = require('js-yaml'),
-	build = require('./lib/build');
+	build = require('csc.js').build;
 
 // load build.yml and modules.yml
 var dir = process.cwd();
