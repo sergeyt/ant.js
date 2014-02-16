@@ -1,20 +1,20 @@
 mod1:
   out: mod1.dll
 mod2:
-  deps: mod1
   out: mod2.dll
-mod3:
-  deps: mod1,mod2
-  out: mod3.dll
-mod4:
-  deps: mod2,mod3
-  out: mod4.dll
-mod4:
-  deps: mod2,mod3
-  out: mod4.dll
-mod5:
   deps: mod1
+mod3:
+  out: mod3.dll
+  deps: mod1,mod2
+mod4:
+  out: mod4.dll
+  deps: mod2,mod3
+mod4:
+  out: mod4.dll
+  deps: mod2,mod3
+mod5:
   out: mod5.dll
+  deps: mod1
 main:
-  deps: mod1,mod4,mod5
   out: main.exe
+  deps: mod1,mod4,mod5
